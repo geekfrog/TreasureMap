@@ -1,0 +1,9 @@
+# 插件前缀.
+# Plugin prefix.
+pluginPrefix: '&4[&b藏宝图&4] '
+# 是否开启DEBUG模式.
+# Whether to open the DEBUG mode.
+debug: false
+# 是否同意插件上传统计信息.
+# Whether or not you agree with the plugin to upload statistics.
+metrics: true
