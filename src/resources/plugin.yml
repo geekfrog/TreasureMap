@@ -1,0 +1,27 @@
+name: TreasureMap
+version: 0.1.0-BATE
+main: gg.frog.mc.treasuremap.PluginMain
+author: GeekFrog
+softdepend:
+- Vault
+commands:
+  treasuremap:
+    description: Show all commands.
+    usage: /treasuremap [param]
+  tm:
+    description: Aliases commands for TreasureMap.
+    usage: /tm [param]
+permissions:
+  treasuremap.*:
+    description: Gives access to all TreasureMap commands.
+    default: op
+    children:
+      treasuremap.me: true
+      treasuremap.reload: true
+  treasuremap.me:
+    description: View himself package.
+    default: true
+  treasuremap.reload:
+    description: Reloads the config file.
+    default: op
+    
