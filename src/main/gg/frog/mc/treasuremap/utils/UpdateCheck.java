@@ -21,7 +21,7 @@ public class UpdateCheck implements Runnable {
     @Override
     public void run() {
         try {
-            String pluginInfoUrl = "https://raw.githubusercontent.com/geekfrog/PermissionsTime/master/src/resources/plugin.yml";
+            String pluginInfoUrl = "https://raw.githubusercontent.com/geekfrog/TreasureMap/master/src/resources/plugin.yml";
             URL url = new URL(pluginInfoUrl);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.4; en-US; rv:1.9.2.2) Gecko/20100316 Firefox/3.6.2");

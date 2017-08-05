@@ -1,9 +1,48 @@
 # 插件前缀.
-# Plugin prefix.
 pluginPrefix: '&4[&b藏宝图&4] '
 # 是否开启DEBUG模式.
-# Whether to open the DEBUG mode.
 debug: false
 # 是否同意插件上传统计信息.
-# Whether or not you agree with the plugin to upload statistics.
 metrics: true
+# 挖到宝物所需的最小次数
+minTimes: 2
+# 挖到宝物所需的最大次数
+maxTimes: 5
+# 挖宝范围: 以宝藏提示的坐标点为圆心, range为半径内的圆形区域
+range: 5
+# 藏宝图列表
+# Map list.
+maps:
+  #一个示例藏宝图
+  exampleMap1:
+    # 藏宝图的物品名称
+    displayName: '测试藏宝图1'
+    lore:
+    - '&a宝藏坐标(X: {x}, Y: {y})'
+    - '&1藏宝图'
+    - '&d藏宝图'
+    areas:
+      # circle: x,y为圆心 , radius为半径的圆形区域
+      area1:
+        type: 'circle'
+        x: 1500
+        z: 1500
+        radius: 500
+      # rectangle: x1,z1和x2,z2为矩形对角线上的两个点的区域
+      area2:
+        type: 'rectangle'
+        x1: 1500
+        z1: 1500
+        x2: -1500
+        z2: -1500
+    # 自定义宝藏列表
+    rewards:
+      # 自定义宝藏1
+      reward1:
+        # 几率
+        chance: 0.5
+        # 执行命令
+        commands: 
+        - 'op:give %player% 1 1'
+        - 'say 我挖到宝物了!'
+        
